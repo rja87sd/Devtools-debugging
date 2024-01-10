@@ -27,7 +27,7 @@ updateMessage();
  
 
 // Error 7:
-document.getElementById('testButton').addEventListener('click', testFunction()); // testButton Id did not exist. Added a second button with ID testButton to index.html
+document.getElementById('testButton').addEventListener('click', testFunction); // testButton Id did not exist. Added a second button with ID testButton to index.html
 
 function testFunction() {
   console.log('Test function executed');
@@ -52,7 +52,10 @@ let importantData =
 console.log(importantData); // removed '' from importantData so now it displays the string value, rather than a string that says importantData
 
 // Error 12: 
-testFunction(); // tryToCallFunction was undefined. Changed to function that has definition.
+function tryToCallFunction() {
+  return undefined;
+}
+console.log(tryToCallFunction()); // tryToCallFunction was undefined. Changed so that it returns value of undefined.
 
 // Error 13:
 let user = { name: 'Alice' }; // 'name' was misspelled.
