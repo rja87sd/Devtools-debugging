@@ -81,9 +81,9 @@ if (five == 5) {
     console.log('Five is not equal to 5');} // Added closing bracket to else statement and removed one of the = from 'if (five === 5)'
 
 // Error 18:
-Array.prototype.push = function () {
-  console.log("Array push method is overwritten");
-};
+// Array.prototype.push = function () {
+//   console.log("Array push method is overwritten");
+// };
 let numbers = [];
 numbers.push(1);
 console.log(numbers);
