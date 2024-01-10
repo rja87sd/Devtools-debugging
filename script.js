@@ -1,3 +1,4 @@
+'use strict';
 // Error 1:
 let message = 'Welcome to the debugging exercise!';
 console.log(message); 
@@ -92,7 +93,7 @@ numbers.push(1);
 console.log(numbers);
 
 // Error 19:
-x = 5; // moved this line above console.log so x is now defined
+let x = 5; // moved this line above console.log so x is now defined
 console.log(x);
 
 
