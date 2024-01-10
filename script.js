@@ -27,7 +27,7 @@ updateMessage();
  
 
 // Error 7:
-document.getElementById('testButton').addEventListener('click', testFunction); //Was calling for an element that did not exist. Added a button with Id testButton
+document.getElementById('testButton').addEventListener('click', testFunction()); // testButton Id did not exist. Added a second button with ID testButton to index.html
 
 function testFunction() {
   console.log('Test function executed');
