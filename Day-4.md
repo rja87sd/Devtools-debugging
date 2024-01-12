@@ -16,7 +16,24 @@
 - Record a performance profile while interacting with your site.
 
 - Identify any significant issues, such as long tasks, layout shifts, or heavy scripting.
+-- 
 
 - Capture a screenshot of the performance profile.
+-- https://raw.githubusercontent.com/rja87sd/Devtools-debugging/main/Screenshots/Day4-Lighthouse2.png
 
 - Propose optimizations based on your findings.
+-- 
+
+
+
+- Section 3:
+
+- Switch to the Network tab in DevTools.
+
+- Reload your site and analyze the network activity.
+
+- Identify resources that are large in size or take a long time to load (e.g., images, scripts, CSS files).
+
+- Capture a screenshot of the network activity panel.
+
+- Suggest ways to optimize these resources.
