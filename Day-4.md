@@ -1,7 +1,7 @@
 - Section 1:
 
 - Use Chrome DevTools to run a Lighthouse audit on the main page of your capstone project.
-- Capture a screenshot of the Lighthouse report.
+- Capture a screenshot of the Lighthouse report.  
 -- https://raw.githubusercontent.com/rja87sd/Devtools-debugging/main/Screenshots/Day4-Lighthouse1.png
 
 - Identify areas with low scores (below 80) and list them in your report.
@@ -23,10 +23,10 @@
     Unused JS  
     Legacy JS detected  
 
-- Capture a screenshot of the performance profile.
+- Capture a screenshot of the performance profile.  
 -- https://raw.githubusercontent.com/rja87sd/Devtools-debugging/main/Screenshots/Day4-Lighthouse2.png
 
-- Propose optimizations based on your findings.
+- Propose optimizations based on your findings.  
 --  Reduce unused CSS.  
     Preload images.  
     Minify CSS.  
