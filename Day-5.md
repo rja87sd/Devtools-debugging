@@ -33,11 +33,17 @@ For each identified problem, propose a solution or an optimization strategy. Bri
 
 #### Problem 2:
 
-As yet unsure.
+<img
+      src="https://via.placeholder.com/1200x800"
+      alt="Large Image"
+      id="largeImage"
+    />
 
 - Description:  
+  The image on the page is very large and takes longer than the rest of the page to load.  
 
 - Solution:  
+  Resize the image to a smaller resolution or find a suitable image that is already at a smaller resolution.  
 
 #### Problem 3:  
 
@@ -45,14 +51,109 @@ As yet unsure.
 <script src="app.js"></script>
 </body>
 
-- Description:  
+- Description: The jquery link is very script heavy, causing performance issues.  
       
 
-- Solution:  
-    
+- Solution:  The jquery link isn't really needed because it is full of code that JavaScript is already capable of carrying out. Remove the jquery link.  
 
+
+### Style.css
+    
+#### Problem 5:  
+
+  body {
+    font-family: Arial, sans-serif !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #f0f0f0 !important;
+  }
+
+  - Description:  
+    There are unnecessary !important tags in the code. Since there is no bootstrap or other styling code linked to the document, there is no need for these tags and they may interact adversely with the rest of the css code.  
+
+  - Solution:  
+    Remove the !important tags. Example:  
+    body {  
+      font-family: Arial, sans-serif;  
+      margin: 0;  
+      padding: 0;  
+      background-color: #f0f0f0;  
+    }  
+
+#### Problem 6:
+
+  .unused-class-1,  
+  .unused-class-2,  
+  .unused-class-3 {  
+    color: blue;  
+    background-color: black;  
+  }  
+
+  - Description:  
+    There is unused css code. This can cause performance issues when the page loads.
+
+  - Solution:  
+    Adjust css code so that unused classes or element IDs are instead linked to classes or element IDS that are currently in use. Example:  
+    .body {  
+      color: blue;  
+      background-color: black;  
+    }  
+
+#### Problem 7:  
+
+  img#largeImage {  
+    width: 1200px;  
+    height: auto;  
+  }  
+
+  - Description:  
+    According to Lighthouse, the image does not have a static height or width.
+
+  - Solution:  
+    Adjust height property from auto to a static value. Example:  
+    img#largeImage {  
+      width: 1200px;  
+      height: 900px;  
+    }  
+
+#### Problem 8:
+
+  body div#profileContainer > h2 {
+    font-size: 2em;
+  }
+
+- Description:  
+  The div with an ID of profileContainer had no h2 element within it. This was causing the css code above to go unused.  
+
+- Solution:  
+  Add an h2 element with text to the div. Example:  
+  <div id="profileContainer">
+    <h2>Heading for Image</h2>
+  </div>
+
+
+### App.js
+
+#### Problem 9:  
+
+Unsure where the problem is, as code seems to be functioning correctly.
+
+#### Problem 10:  
+
+Unsure where the problem is, as the code seems to be functioning correctly.
+
+#### Problem 11:  
+
+  $('body').append(`<p>The sum is: ${sum}</p>`);
+
+  - Description:  
+    When the jquery script was unlinked from the document, this snippet ceased to function because $ was undefined.  
+
+  - Solution:  
+    Change the code to append the desired text to the document body. Example:  
+    document.body.append(`The sum is: ${sum}`);
 
 
 ### Reflect
 
-After completing the exercise, write a brief reflection on what you learned from this debugging and optimization process. Discuss any new insights you gained and how you might apply these skills in future projects.
+When debugging code, it is important to use the dev tools in tandem with one's attempts to locate errors or issues within the code by sight, as not all issues are readily apparent.
