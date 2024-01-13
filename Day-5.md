@@ -19,14 +19,38 @@ For each identified problem, propose a solution or an optimization strategy. Bri
     </style>
   </head>
 
-  - Description:  
-        The head element in this document has no meta data.  
+- Description:  
+    The head element in this document has no meta data. There is also a style element in the head, when there is already a link to a .css file. There is also no document title element.  
 
-  - Solution:  
-        Add element(s) containing meta information such as:  
+- Solution:  
+    Add element(s) containing meta information such as:  
         <meta charset="UTF-8" />  
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
         <title>Document</title>  
+    Move contents of the style element into the .css file and remove the style element from the head element.  
+    Add a title element to the head element. Example:  
+        <title>Document</title>  
+
+#### Problem 2:
+
+As yet unsure.
+
+- Description:  
+
+- Solution:  
+
+#### Problem 3:  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+
+- Description:  
+      
+
+- Solution:  
+    
+
 
 
 ### Reflect
