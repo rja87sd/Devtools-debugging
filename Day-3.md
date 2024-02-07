@@ -10,3 +10,5 @@
 - Task 18: Orbit
 - Task 19: Nebula
 - Task 20: Zenith
+
+I added breakpoints to each line of code where I saw it was fetching the information and set it so that it didn't pause for handled or unhandled exceptions, and just kept clicking through until the data showed the answer and the task number it went to.
